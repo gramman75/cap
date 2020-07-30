@@ -102,3 +102,29 @@ CAP에서의 모든 Action은 아래의 원칙으로 서비스와 이벤트기�
 CAP은 일반적인 기본 구현을 미리 제공하고 있다. Spring Data JPA에 JpaRepository와 유사한 기능이다.
 
 #### 자동추가되는 서비스
+
+* CRUD Request
+    * Default Data Source가 설정이 되어 있고, 노출된 엔티티가 uinon 이나 join을 사용하지 않았을 때
+* Deeply-Nested Documensts
+    * 엔티티의 연관관계가 맺어져 있는 엔티티에 대해서도 기본 CRUD를 제공한다. 
+    * Parenet/Child 관계가 있는 Data를 Insert할때 한번에 처리할 수 있을 것 같음.
+* Media Data
+    * 엔티티 요소에 Annotaion을 이용하여 Media Data를 포함할 수 있다.
+* Draft Choreography
+    * ???
+
+#### 반복작업
+
+* Implicit Pagination
+* Input Validation
+* Authentication
+* Authorization
+* Localization / i18n
+* Concurrency Control
+
+#### BP 사례적용
+* Common Reuse Types & Aspects
+* Managed Data
+* Localized Data
+* Temporal Data
+* Verticalization & Extensibility
